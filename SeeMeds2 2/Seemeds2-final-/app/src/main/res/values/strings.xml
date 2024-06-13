@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">SeeMeds2</string>
+    <string name="create_account">Create account</string>
+    <string name="new_member">new member?</string>
+    <string name="log_in">log in</string>
+    <string name="email">email</string>
+    <string name="password">password</string>
+    <string name="username">username</string>
+    <string name="or">OR</string>
+    <string name="tab_to_continue">tab to continue</string>
+    <string name="login">log in</string>
+    <string name="already_a_member">already a member?</string>
+    <string name="next">NEXT</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="camera_fragment">Camera Fragment</string>
+    <string name="settings_fragment">Settings Fragment</string>
+    <string name="schedule_fragment">Schedule Fragment</string>
+    <string name="camera">Camera</string>
+    <string name="schedule">Schedule</string>
+    <string name="settings">Settings</string>
+    <string name="reminder">Reminder</string>
+
+
+</resources>

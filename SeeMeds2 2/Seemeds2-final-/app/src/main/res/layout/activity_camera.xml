@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    tools:context=".Camera"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linear_button"
+        android:layout_above="@id/scrollview1"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+<!--        <Button-->
+<!--            android:id="@+id/buttoncamera1"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentTop="true"-->
+<!--            android:text="Capture"-->
+<!--            />-->
+        <Button
+            android:visibility="gone"
+            android:id="@+id/buttoncopy1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="Copy Text"
+            />
+<!--        <Button-->
+<!--            android:visibility="gone"-->
+<!--            android:id="@+id/buttontts1"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:text="Text-to-speech"-->
+<!--            />-->
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:id="@+id/scrollview1"
+        android:layout_alignParentBottom="true"
+        >
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/textview1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hello Capture img to perform OCR "
+            android:textColor="@color/black"
+            android:textSize="22sp" />
+    </ScrollView>
+
+
+    <!--    <ImageView-->
+<!--        android:id="@+id/imageview1"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent" />-->
+
+
+
+    <include layout="@layout/activity_navigaion_bar"
+        android:id="@+id/navbar"/>
+
+</RelativeLayout>

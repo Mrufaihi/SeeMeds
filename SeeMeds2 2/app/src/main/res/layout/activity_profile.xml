@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".profile">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="290dp"
+        />
+
+
+
+    <ImageButton
+        android:id="@+id/backBtn"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:src="@drawable/icon_arrow_back"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_gravity="center"
+        android:background="@android:color/transparent"/>
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/profileImage"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="60dp"
+        app:shapeAppearanceOverlay="@style/circular"
+        app:srcCompat="@drawable/logo" />
+
+
+
+    <LinearLayout
+        android:id="@+id/namebox"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/profileImage"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:paddingTop="15dp"
+        android:background="@drawable/white_box"
+        android:elevation="30dp">
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name"
+                android:inputType="text"
+                android:focusedByDefault="true"
+                android:textDirection="ltr"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/emailbox"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/namebox"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:paddingLeft="30dp"
+        android:paddingTop="15dp"
+        android:background="@drawable/white_box"
+        android:elevation="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EMAIL"
+            android:textSize="18dp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="18dp"
+            android:textColor="@color/grey_dark"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mobilebox"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/emailbox"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:paddingTop="15dp"
+        android:background="@drawable/white_box"
+        android:elevation="30dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mobile Number"
+                android:inputType="text"
+                android:focusedByDefault="true"
+                android:textDirection="ltr"/>
+        </com.google.android.material.textfield.TextInputLayout>/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/apply_changes"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_below="@+id/mobilebox"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/button_rectangle1"
+        android:text="Apply Changes"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="23dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
+
+

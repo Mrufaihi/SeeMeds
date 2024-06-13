@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Camera"
+    android:background="@color/lightGreen"
+    >
+
+
+    <ScrollView
+        android:id="@+id/scrollview1"
+        android:layout_width="match_parent"
+        android:layout_height="339dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="140dp"
+        android:layout_marginBottom="198dp">
+
+        <TextView
+            android:id="@+id/textview1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:shadowColor="#000000"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="1"
+            android:text="Capture image to perform OCR "
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"
+
+            />
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linear_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_above="@+id/navbar_layout"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttoncopy1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Copy Text"
+            android:textSize="22sp"
+            android:visibility="visible"
+            android:backgroundTint="@color/darkGreen"
+            />
+
+        <!--        <Button-->
+        <!--            android:id="@+id/buttoncamera1"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_alignParentTop="true"-->
+        <!--            android:text="Capture"-->
+        <!--            />-->
+        <!--        <Button-->
+        <!--            android:visibility="gone"-->
+        <!--            android:id="@+id/buttontts1"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_alignParentBottom="true"-->
+        <!--            android:text="Text-to-speech"-->
+        <!--            />-->
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/navbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" />
+
+    <include layout="@layout/activity_navigaion_bar"
+        android:id="@+id/navbar"
+        />
+
+</RelativeLayout>
